@@ -1,0 +1,1600 @@
+;
+; Android WinUsb driver installation.
+;
+[Version]
+Signature           = "$Windows NT$"
+Class               = AndroidUsbDeviceClass
+ClassGuid           = {3F966BD9-FA04-4ec5-991C-D326973B5128}
+Provider            = %ProviderName%
+DriverVer           = 08/28/2016,11.0.0000.00000
+CatalogFile         = androidwinusb.cat
+
+[ClassInstall32]
+Addreg = AndroidWinUsbClassReg
+
+[AndroidWinUsbClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+
+[Manufacturer]
+%ProviderName% = Google, NTx86, NTamd64
+
+
+[Google.NTx86]
+;kedacom IPW300
+%SingleBootLoaderInterface% = USB_Install, USB\VID_18D1&PID_D00D
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6011
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6011&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6012
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6012&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6013
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6013&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6014
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6014&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6015
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6015&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6016
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6016&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6017
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6017&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6018
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6018&MI_01
+
+;kedacom IPW300S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6021
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6021&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6022
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6022&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6023
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6023&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6024
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6024&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6025
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6025&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6026
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6026&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6027
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6027&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6028
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6028&MI_01
+
+;kedacom Project-1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6031
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6031&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6032
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6032&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6033
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6033&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6034
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6034&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6035
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6035&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6036
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6036&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6037
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6037&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6038
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6038&MI_01
+
+;kedacom Project-2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6041
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6041&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6042
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6042&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6043
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6043&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6044
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6044&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6045
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6045&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6046
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6046&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6047
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6047&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6048
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6048&MI_01
+
+;kedacom Project-3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6051
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6051&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6052
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6052&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6053
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6053&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6054
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6054&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6055
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6055&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6056
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6056&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6057
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6057&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6058
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6058&MI_01
+
+;kedacom Project-4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6061
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6061&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6062
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6062&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6063
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6063&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6064
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6064&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6065
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6065&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6066
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6066&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6067
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6067&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6068
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6068&MI_01
+
+;kedacom Project-5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6071
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6071&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6072
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6072&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6073
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6073&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6074
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6074&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6075
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6075&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6076
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6076&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6077
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6077&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6078
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6078&MI_01
+
+;kedacom Project-6
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6081
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6081&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6082
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6082&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6083
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6083&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6084
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6084&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6085
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6085&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6086
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6086&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6087
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6087&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6088
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6088&MI_01
+
+;kedacom Project-7
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6091
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6091&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6092
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6092&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6093
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6093&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6094
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6094&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6095
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6095&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6096
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6096&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6097
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6097&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6098
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6098&MI_01
+
+;kedacom Project-8
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A8&MI_01
+
+;Che zai device
+;kedacom Project-1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6111
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6111&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6112
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6112&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6113
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6113&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6114
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6114&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6115
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6115&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6116
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6116&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6117
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6117&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6118
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6118&MI_01
+
+;kedacom Project-2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6121
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6121&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6122
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6122&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6123
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6123&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6124
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6124&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6125
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6125&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6126
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6126&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6127
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6127&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6128
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6128&MI_01
+
+;kedacom Project-3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6131
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6131&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6132
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6132&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6133
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6133&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6134
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6134&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6135
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6135&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6136
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6136&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6137
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6137&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6138
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6138&MI_01
+
+;kedacom Project-4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6141
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6141&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6142
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6142&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6143
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6143&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6144
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6144&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6145
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6145&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6146
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6146&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6147
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6147&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6148
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6148&MI_01
+
+;kedacom Project-5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6151
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6151&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6152
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6152&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6153
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6153&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6154
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6154&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6155
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6155&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6156
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6156&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6157
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6157&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6158
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6158&MI_01
+
+;kedacom Project-6
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6161
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6161&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6162
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6162&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6163
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6163&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6164
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6164&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6165
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6165&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6166
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6166&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6167
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6167&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6168
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6168&MI_01
+
+;kedacom Project-7
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6171
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6171&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6172
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6172&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6173
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6173&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6174
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6174&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6175
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6175&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6176
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6176&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6177
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6177&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6178
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6178&MI_01
+
+;kedacom Project-8
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6181
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6181&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6182
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6182&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6183
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6183&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6184
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6184&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6185
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6185&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6186
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6186&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6187
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6187&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6188
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6188&MI_01
+
+
+;kedacom Project-9
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6191
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6191&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6192
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6192&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6193
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6193&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6194
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6194&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6195
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6195&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6196
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6196&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6197
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6197&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6198
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6198&MI_01
+
+;kedacom Project-A
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A8&MI_01
+
+;kedacom P1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6611
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6611&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6612
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6612&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6613
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6613&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6614
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6614&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6615
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6615&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6616
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6616&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6617
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6617&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6618
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6618&MI_01
+
+;kedacom P1S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6621
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6621&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6622
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6622&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6623
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6623&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6624
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6624&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6625
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6625&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6626
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6626&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6627
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6627&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6628
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6628&MI_01
+
+;kedacom P2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6631
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6631&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6632
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6632&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6633
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6633&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6634
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6634&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6635
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6635&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6636
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6636&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6637
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6637&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6638
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6638&MI_01
+
+;kedacom P2S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6641
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6641&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6642
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6642&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6643
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6643&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6644
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6644&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6645
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6645&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6646
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6646&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6647
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6647&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6648
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6648&MI_01
+
+;kedacom P3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6651
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6651&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6652
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6652&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6653
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6653&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6654
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6654&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6655
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6655&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6656
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6656&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6657
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6657&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6658
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6658&MI_01
+
+;kedacom P3S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6661
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6661&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6662
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6662&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6663
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6663&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6664
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6664&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6665
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6665&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6666
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6666&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6667
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6667&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6668
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6668&MI_01
+
+;kedacom P4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6671
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6671&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6672
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6672&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6673
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6673&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6674
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6674&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6675
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6675&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6676
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6676&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6677
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6677&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6678
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6678&MI_01
+
+;kedacom P4S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6681
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6681&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6682
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6682&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6683
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6683&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6684
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6684&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6685
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6685&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6686
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6686&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6687
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6687&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6688
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6688&MI_01
+
+;kedacom P5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6691
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6691&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6692
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6692&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6693
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6693&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6694
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6694&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6695
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6695&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6696
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6696&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6697
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6697&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6698
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6698&MI_01
+
+;kedacom P5S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A8&MI_01
+
+#recovery
+%SingleAdbInterface%        = USB_Install, USB\VID_18D1&PID_D001
+
+[Google.NTamd64]
+;kedacom IPW300
+%SingleBootLoaderInterface% = USB_Install, USB\VID_18D1&PID_D00D
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6011
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6011&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6012
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6012&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6013
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6013&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6014
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6014&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6015
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6015&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6016
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6016&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6017
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6017&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6018
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6018&MI_01
+
+;kedacom IPW300S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6021
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6021&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6022
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6022&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6023
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6023&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6024
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6024&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6025
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6025&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6026
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6026&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6027
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6027&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6028
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6028&MI_01
+
+;kedacom Project-1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6031
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6031&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6032
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6032&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6033
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6033&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6034
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6034&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6035
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6035&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6036
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6036&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6037
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6037&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6038
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6038&MI_01
+
+;kedacom Project-2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6041
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6041&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6042
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6042&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6043
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6043&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6044
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6044&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6045
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6045&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6046
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6046&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6047
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6047&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6048
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6048&MI_01
+
+;kedacom Project-3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6051
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6051&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6052
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6052&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6053
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6053&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6054
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6054&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6055
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6055&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6056
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6056&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6057
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6057&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6058
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6058&MI_01
+
+;kedacom Project-4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6061
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6061&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6062
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6062&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6063
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6063&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6064
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6064&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6065
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6065&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6066
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6066&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6067
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6067&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6068
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6068&MI_01
+
+;kedacom Project-5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6071
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6071&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6072
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6072&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6073
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6073&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6074
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6074&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6075
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6075&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6076
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6076&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6077
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6077&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6078
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6078&MI_01
+
+;kedacom Project-6
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6081
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6081&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6082
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6082&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6083
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6083&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6084
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6084&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6085
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6085&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6086
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6086&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6087
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6087&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6088
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6088&MI_01
+
+;kedacom Project-7
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6091
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6091&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6092
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6092&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6093
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6093&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6094
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6094&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6095
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6095&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6096
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6096&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6097
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6097&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6098
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6098&MI_01
+
+;kedacom Project-8
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_60A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_60A8&MI_01
+
+;Che zai device
+;kedacom Project-1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6111
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6111&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6112
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6112&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6113
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6113&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6114
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6114&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6115
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6115&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6116
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6116&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6117
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6117&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6118
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6118&MI_01
+
+;kedacom Project-2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6121
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6121&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6122
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6122&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6123
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6123&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6124
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6124&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6125
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6125&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6126
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6126&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6127
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6127&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6128
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6128&MI_01
+
+;kedacom Project-3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6131
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6131&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6132
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6132&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6133
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6133&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6134
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6134&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6135
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6135&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6136
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6136&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6137
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6137&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6138
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6138&MI_01
+
+;kedacom Project-4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6141
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6141&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6142
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6142&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6143
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6143&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6144
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6144&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6145
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6145&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6146
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6146&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6147
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6147&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6148
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6148&MI_01
+
+;kedacom Project-5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6151
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6151&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6152
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6152&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6153
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6153&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6154
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6154&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6155
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6155&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6156
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6156&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6157
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6157&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6158
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6158&MI_01
+
+;kedacom Project-6
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6161
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6161&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6162
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6162&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6163
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6163&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6164
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6164&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6165
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6165&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6166
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6166&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6167
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6167&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6168
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6168&MI_01
+
+;kedacom Project-7
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6171
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6171&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6172
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6172&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6173
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6173&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6174
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6174&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6175
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6175&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6176
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6176&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6177
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6177&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6178
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6178&MI_01
+
+;kedacom Project-8
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6181
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6181&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6182
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6182&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6183
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6183&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6184
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6184&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6185
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6185&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6186
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6186&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6187
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6187&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6188
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6188&MI_01
+
+
+;kedacom Project-9
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6191
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6191&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6192
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6192&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6193
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6193&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6194
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6194&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6195
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6195&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6196
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6196&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6197
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6197&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6198
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6198&MI_01
+
+;kedacom Project-A
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_61A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_61A8&MI_01
+
+;kedacom P1
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6611
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6611&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6612
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6612&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6613
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6613&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6614
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6614&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6615
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6615&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6616
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6616&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6617
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6617&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6618
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6618&MI_01
+
+;kedacom P1S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6621
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6621&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6622
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6622&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6623
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6623&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6624
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6624&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6625
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6625&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6626
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6626&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6627
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6627&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6628
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6628&MI_01
+
+;kedacom P2
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6631
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6631&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6632
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6632&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6633
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6633&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6634
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6634&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6635
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6635&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6636
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6636&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6637
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6637&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6638
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6638&MI_01
+
+;kedacom P2S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6641
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6641&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6642
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6642&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6643
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6643&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6644
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6644&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6645
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6645&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6646
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6646&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6647
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6647&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6648
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6648&MI_01
+
+;kedacom P3
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6651
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6651&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6652
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6652&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6653
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6653&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6654
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6654&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6655
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6655&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6656
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6656&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6657
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6657&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6658
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6658&MI_01
+
+;kedacom P3S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6661
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6661&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6662
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6662&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6663
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6663&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6664
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6664&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6665
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6665&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6666
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6666&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6667
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6667&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6668
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6668&MI_01
+
+;kedacom P4
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6671
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6671&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6672
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6672&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6673
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6673&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6674
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6674&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6675
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6675&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6676
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6676&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6677
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6677&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6678
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6678&MI_01
+
+;kedacom P4S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6681
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6681&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6682
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6682&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6683
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6683&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6684
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6684&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6685
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6685&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6686
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6686&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6687
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6687&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6688
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6688&MI_01
+
+;kedacom P5
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6691
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6691&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6692
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6692&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6693
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6693&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6694
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6694&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6695
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6695&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6696
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6696&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6697
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6697&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_6698
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_6698&MI_01
+
+;kedacom P5S
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A1
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A1&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A2
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A2&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A3
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A3&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A4
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A4&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A5
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A5&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A6
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A6&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A7
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A7&MI_01
+
+%SingleAdbInterface% = USB_Install, USB\VID_2DCC&PID_66A8
+%CompositeAdbInterface%     = USB_Install, USB\VID_2DCC&PID_66A8&MI_01
+
+#recovery
+%SingleAdbInterface%        = USB_Install, USB\VID_18D1&PID_D001
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include     = winusb.inf
+AddService  = WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+[USB_Install.Wdf]
+KmdfService = WINUSB, WinUSB_Install
+
+[WinUSB_Install]
+KmdfLibraryVersion  = 1.9
+
+[USB_Install.HW]
+AddReg  = Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{F72FE0D4-CBCB-407d-8814-9ED673D0DD6B}"
+
+[USB_Install.CoInstallers]
+AddReg    = CoInstallers_AddReg
+CopyFiles = CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\i386
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller2.dll  = 1
+WdfCoInstaller01009.dll = 1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller2.dll  = 2
+WdfCoInstaller01009.dll = 2
+
+[Strings]
+ProviderName                = "Google, Inc."
+SingleAdbInterface          = "Kedacom KDB Interface"
+CompositeAdbInterface       = "Kedacom KDB Composite Interface"
+SingleBootLoaderInterface   = "Android Bootloader Interface"
+WinUSB_SvcDesc              = "Kedacom USB Device"
+DISK_NAME                   = "Android WinUsb installation disk"
+ClassName                   = "Kedacom USB Device"
